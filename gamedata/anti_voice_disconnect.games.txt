@@ -1,0 +1,49 @@
+"Games"
+{
+	"cstrike"
+	{
+		"Signatures"
+		{
+			// Search string: "Sending voice from: %s"
+			"SV_BroadcastVoiceData"
+			{
+				"library"   "engine"
+				"windows"   "\x55\x8B\xEC\xA1\x2A\x2A\x2A\x2A\x83\xEC\x50"
+				"linux"		"@_Z21SV_BroadcastVoiceDataP7IClientiPcx"
+			}
+		}
+		"Functions"
+		{
+			"SV_BroadcastVoiceData"
+			{
+				"signature"   "SV_BroadcastVoiceData"
+				"callconv"    "cdecl"
+				"return"      "void"
+				"this"        "ignore"
+				"arguments"
+				{
+					"pClient"
+					{
+						"type"    "objectptr"
+					}
+					"nBytes"
+					{
+						"type"    "int"
+					}
+					"data"
+					{
+						"type"    "charptr"
+					}
+					"xuid_0" // 64-bit int but split
+					{
+						"type"    "int"
+					}
+					"xuid_1" // 64-bit int but split
+					{
+						"type"    "int"
+					}
+				}
+			}
+		}
+	}
+}

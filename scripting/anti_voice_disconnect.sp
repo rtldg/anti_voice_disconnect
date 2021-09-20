@@ -1,6 +1,6 @@
 // Hook and fix found by BotoX in the sm-ext-Voice extension.
 // https://git.botox.bz/CSSZombieEscape/sm-ext-Voice
-// Ported to a sourcepawn extension by rtldg because extensions are a hassle.
+// Ported to a sourcepawn plugin by rtldg because extensions are a hassle.
 
 #include <dhooks>
 
